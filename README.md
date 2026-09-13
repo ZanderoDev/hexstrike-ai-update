@@ -112,6 +112,15 @@ graph TD
 
 ## Installation
 
+> **Fork note (v6.0.1 fixed):** this fork adds `./install.sh` — automated setup that
+> scans existing tools, installs only what's missing, uses the fixed fast
+> `/health` detection, and writes the OpenCode MCP config for you.
+> ```bash
+> ./install.sh --categories "network web exploit password" --yes
+> ./install.sh --check-health   # verify server + tool coverage
+> ```
+> Manual steps below still work, but the installer is recommended.
+
 ### Quick Setup to Run the hexstrike MCPs Server
 
 ```bash
